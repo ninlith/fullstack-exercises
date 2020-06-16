@@ -1,0 +1,17 @@
+title 0.6: SPA uusi muistiinpano
+
+note over selain:
+spa.js: lomakkeen tapahtumakäsittelijä
+päivittää selainpuolen notes-taulukon, 
+uudelleenrenderöi muistiinpanot näytölle
+ja lähettää datan palvelimelle.
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over palvelin:
+palvelin vastaanottaa JSON-muodossa 
+mukana tulleen muistiinpanon
+end note
+
+palvelin-->selain: statuskoodi 201 Created
